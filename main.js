@@ -10,7 +10,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 mongoose
-  .connect("mongodb+srv://uri:123@cluster0.wkh13vp.mongodb.net/drivingBehavior")
+  .connect("mongodb+srv://<username>:<password>@cluster0.wkh13vp.mongodb.net/drivingBehavior")
   .then(() => {
     console.log("Connected to MongoDB");
   })
